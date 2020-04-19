@@ -8,10 +8,8 @@
     
       <div class="d-flex align-center">
 
-		<v-icon large>mdi-account-details</v-icon>
 
-		<div class="headline ml-3">Ez<span class='font-weight-bold'>Track</span></div>
-
+    <v-img src='./assets/ezTrack.png'></v-img>
       </div>
 
       <v-spacer></v-spacer>
@@ -21,7 +19,9 @@
     </v-app-bar>
 
     <v-content>
-      <router-view></router-view>
+      <v-container>
+        <router-view></router-view>
+      </v-container>
     </v-content>
   </v-app>
 </template>
