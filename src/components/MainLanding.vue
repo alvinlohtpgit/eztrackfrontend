@@ -73,12 +73,13 @@ export default {
                
                 if (response.status === 200){
                     let data = response.data;
-
-                    if (data === 'true'){
+                        
+                    if (data === true){
                         self.companyexist = true;
                     }
-                    else if(data === 'false'){
+                    else if(data === false){
                         self.companyexist = false;
+                        self.$router.push('SignIn');
                     }
                 }
                 else if(response.status === 400){

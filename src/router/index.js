@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import MainLanding from '../components/MainLanding';
+import SignIn from '../components/SignIn';
 
 Vue.use(VueRouter)
 
@@ -9,6 +10,11 @@ Vue.use(VueRouter)
     path: '/',
     name: 'MainLanding',
     component: MainLanding
+  },
+  {
+    path: '/signin',
+    name: 'SignIn',
+    component: SignIn
   },
   {
     path: '/about',
